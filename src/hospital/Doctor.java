@@ -13,6 +13,11 @@ public class Doctor extends Staff implements Payment{
     @Override
     public void calculatePayment () {}
     
+    public void addPatient (Patient newPatient) {
+        this.patient.add(newPatient);
+    }
+    
+    
     public Doctor(String specialization, String assistant) {
         this.specialization = specialization;
         this.assistant = assistant;
